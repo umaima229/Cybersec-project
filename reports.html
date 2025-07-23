@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Reports</title>
+  <link rel="stylesheet" href="reports.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hamburger / Toggle Button -->
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h2>CyberSec</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="cases.html" target="_blank">Cases</a></li>
+      <li><a href="reports.html" class="active" target="_blank">Reports</a></li>
+      <li><a href="users.html" target="_blank">Users</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Reports Content -->
+  <div class="main-content">
+    <div id="reports-container">
+      <header id="reports-header">
+        <h1 id="page-title">Reports Overview</h1>
+        <p id="page-description">Latest analysis and system-generated reports</p>
+      </header>
+
+      <section id="report-cards">
+        <div class="report-card"><h3>Security Logs</h3><p>Latest firewall breaches and security updates.</p><span class="report-tag">#Security</span></div>
+        <div class="report-card"><h3>Login Attempts</h3><p>Track all failed and successful login events.</p><span class="report-tag">#Access</span></div>
+        <div class="report-card"><h3>Bandwidth Usage</h3><p>Analyze usage per application and user.</p><span class="report-tag">#Network</span></div>
+        <div class="report-card"><h3>Threat Reports</h3><p>See top 10 threats in the last 24 hours.</p><span class="report-tag">#Threats</span></div>
+        <div class="report-card"><h3>Incident Timeline</h3><p>Chronology of detected incidents and resolution.</p><span class="report-tag">#Timeline</span></div>
+        <div class="report-card"><h3>User Activities</h3><p>Monitor top-level admin actions and commands.</p><span class="report-tag">#Admin</span></div>
+        <div class="report-card"><h3>Device Status</h3><p>Live report of active vs. offline devices.</p><span class="report-tag">#Devices</span></div>
+        <div class="report-card"><h3>Malware Reports</h3><p>Reported malware and quarantined files list.</p><span class="report-tag">#Malware</span></div>
+      </section>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
