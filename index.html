@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- ___________________________________________________________________NAVBAR_______________________________________________________________ -->
+    <nav class="nav-bar">
+  <div class="navbar">
+    <div class="logo">CyberSecure</div>
+
+    <!-- Toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menus" id="menuLinks">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="cyber.html" target="_blank">CYBER THREATS</a></li>
+        <li><a href="cases .html" target="_blank">CASES</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+        <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+      </ul>
+    </div>
+
+    <!-- Buttons -->
+    <div class="nav-btns" id="menuButtons">
+      <button><a href="signup.html " target="_blank">SIGN UP</a></button>
+      <!-- <button>LOG IN</button> -->
+    </div>
+  </div>
+</nav>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const menuLinks = document.getElementById('menuLinks');
+  const menuButtons = document.getElementById('menuButtons');
+
+  toggleBtn.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+    menuButtons.classList.toggle('active');
+  });
+</script>
+
+
+
+    <!-- ___________________________________________________________________HERO-SECTION_______________________________________________________________ -->
+    <section class="hero">
+        <div class="hero-sec">
+            <hgroup class="hero-text">
+                <h1>Learn to Fight Cyber Threats <br> Before They Happen</h1>
+                <h6>Get real-world case studies, prevention guides, and expert tips</h6>
+                <button><a href="cyber.html" target="_blank">Learn More</a></button>
+                <button><a href="signup.html" target="_blank">Get Started</a></button>
+            </hgroup>
+            <div class="sidehero-img"><img src="images/wepik-export-20231026003443tjA7 1.webp" alt=""></div>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________ABOUT US-SECTION (PREVIEW)_______________________________________________________________ -->
+    <section class="aboutus-pre">
+        <div class="aboutpre-sec">
+            <div class="aboutpre-img">
+                <img src="images/Image (1).webp" class="pic-1abot" alt="">
+                <img src="images/Image (2).webp" class="pic2-about" alt="">
+            </div>
+            <hgroup class="about-textpre">
+                <h2>About Us</h2>
+                <p class="disc">Discover Our Journey <br>Protecting Your Digital <br> World with Expertise <br> and Care
+                </p>
+                <p class="at">At CyberShield, we believe that awareness is the first step toward safety. <br>Our mission
+                    is to empower
+                    individuals with the knowledge and tools needed <br> to protect themselves from digital threats.
+                    Whether
+                    you're a beginner or tech-savvy, <br> we’re here to guide you through real-world cases, safety tips,
+                    and the
+                    latest <br> in cybersecurity trends.</p>
+                <button><a href="aboutus.html" target="_blank">ABOUT US</a></button>
+            </hgroup>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________CYBERR THREATS SECTION (overview)_______________________________________________________________ -->
+    <section class="cyberthreats">
+        <div class="cyberoverview">
+            <hgroup class="cyberheadings">
+                <h2 data-aos="fade-in">CYBER THREATS</h2>
+                <P data-aos="fade-in" class="cyberp1">Protecting Your Digital Assets Expertly</P>
+                <p data-aos="fade-in" class="cyberp2">Cyber threats are harmful actions aimed at damaging, stealing, or
+                    disrupting digital
+                    systems,
+                    networks, or data.
+                    They come in various forms like viruses, malware, phishing, ransomware, and hacking.
+                    These threats can target individuals, businesses, or governments.
+                    Attackers often try to access personal or sensitive information without permission.
+                    Cyber threats can lead to data loss, identity theft, or financial damage.
+                    Staying aware and following safety practices helps protect against such attacks.
+                    Using strong passwords, antivirus software, and avoiding suspicious links are key steps.</p>
+            </hgroup>
+
+            <div data-aos="flip-left" class="cybercards">
+                <div class="card1">
+                    <div class="out-icons"><i class="fa-solid fa-user-secret icons-cyber"></i></div>
+                    <hgroup class="cards-headings">
+                        <h2>PHISHING</h2>
+                        <p>Fake emails or websites <br>trick users into giving <br> personal info.</p>
+                    </hgroup>
+                </div>
+                <div data-aos="flip-left" class="card2">
+                    <div class="out-icons"><i class="fa-solid fa-skull-crossbones icons-cyber"></i></div>
+                    <hgroup class="cards-headings">
+                        <h2>RANSOMWWARE</h2>
+                        <p>Locks your data <br> and demands money <br> to unlock it.</p>
+                    </hgroup>
+                </div>
+                <div data-aos="flip-left" class="card3">
+                    <div class="out-icons"><i class="fa-solid fa-bug icons-cyber"></i></div>
+                    <hgroup class="cards-headings">
+                        <h2>DDoS Attacks</h2>
+                        <p>Overloads a website <br> with traffic to crash it.</p>
+                    </hgroup>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________SAFETY TIPS SECTION (overview)_______________________________________________________________ -->
+    <section class="safety-section">
+        <div class="safety-container">
+            <div class="safety-text">
+                <h2 data-aos="fade-in" data-aos-duration="2000">SAFETY TIPS</h2>
+                <ul data-aos="fade-in" data-aos-duration="2000">
+                    <li>
+                        <strong>Use Strong, Unique Passwords</strong><br>
+                        Combine uppercase, lowercase, numbers, and symbols — never reuse passwords.
+                    </li>
+                    <li>
+                        <strong>Enable Two-Factor Authentication (2FA)</strong><br>
+                        Add an extra layer of login security using OTPs or biometrics.
+                    </li>
+                    <li>
+                        <strong>Be Cautious of Suspicious Links & Emails</strong><br>
+                        Avoid clicking on unknown links or attachments — common phishing trick.
+                    </li>
+                    <li>
+                        <strong>Keep Software & Devices Updated</strong><br>
+                        Always install updates to fix security holes.
+                    </li>
+                    <li>
+                        <strong>Avoid Using Public Wi-Fi for Sensitive Tasks</strong><br>
+                        Use VPN or avoid logging into accounts on public networks.
+                    </li>
+                </ul>
+                <button data-aos="fade-in" data-aos-duration="1000"><a href="cyber.html" target="_blank">VIEW ALL TIPS</a></button>
+            </div>
+            <div data-aos="slide-left" class="safety-image">
+                <img src="images/man-with-glasses-works-computer-late-night.webp" width="300" alt="Cyber Safety" />
+            </div>
+
+        </div>
+    </section>
+    <!-- ___________________________________________________________________NEWS SECTION (overview)_______________________________________________________________ -->
+    <section class="news-section">
+        <div class="case-section">
+
+            <hgroup class="newsheadings">
+                <h2 data-aos="fade-in">CASE STUDIES</h2>
+                <P data-aos="fade-in" class="newsp1">CYBER CASES</P>
+                <p data-aos="fade-in" class="newsp2">Cyberattacks are real and growing every day.
+                    From global ransomware outbreaks to social media hacks, no one is safe.
+                    Explore real-world cases to see how threats unfold — and how they can be stopped.</p>
+            </hgroup>
+
+            <div data-aos="flip-left" class="newscards">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/cyber-security-concept-digital-art (1).webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">WannaCry Ransomware Outbreak</h5>
+                        <p class="card-text">In 2017, a mysterious virus began locking computers in <br> hospitals,
+                            banks, and universities across the globe. <br> Files were held hostage, and...</p>
+                        <a href="casestudy.html#wannacry-case" target="_blank" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="card card2-n" style="width: 18rem;">
+                    <img src="images/electronic-gadgets-with-notepad-twitter-icon.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Twitter Hack That Shocked the World</h5>
+                        <p class="card-text">In 2020, the official Twitter accounts of Elon Musk, Barack Obama, and
+                            Apple posted strange Bitcoin messages. It turned out to be a...</p>
+                        <a href="casestudy.html#twitter-hack" target="_blank" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________CONTACT SECTION (preview)_______________________________________________________________ -->
+    <section class="contact-sec">
+        <div class="contactus">
+            <hgroup class="contact-headings">
+                <h2 data-aos="fade-in">CONTACT US</h2>
+                <p data-aos="fade-in">Need Help or Have any Question?</p>
+                <button data-aos="fade-in"><a href="contact.html" target="_blank">Contact Us</a></button>
+            </hgroup>
+            <div data-aos="slide-left" class="contact-image">
+                <img src="images/Image (1).webp" alt="Cyber Safety" />
+            </div>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________ADMIN SECTION (preview)_______________________________________________________________ -->
+    <section class="admin-access">
+        <div class="admin-sec">
+            <hgroup class="admin-headings">
+                <h2 data-aos="fade-in">ADMIN PAGE</h2>
+                <p data-aos="fade-in">Click on the Following Button to access Admin Page</p>
+                <button data-aos="fade-in"><a href="./adminpannal/dashboard.html" target="_blank">Admin Login</a></button>
+            </hgroup>
+            <div data-aos="slide-left" class="admin-image">
+                <img src="images/0e553ff6-cc73-4002-a80c-8a64b0f055bb-removebg-preview.webp" alt="Cyber Safety" />
+            </div>
+        </div>
+    </section>
+    <!-- ___________________________________________________________________FOOTER_______________________________________________________________ -->
+    <section class="footer">
+        <div class="footer-sec">
+            <div class="footer-menus">
+                <div class="logo-f">CyberSecure</div>
+                <div>Follow our different social media <br> pages and stay tuned with the <br> latest information,
+                    <br>related to
+                    cyber security.
+                </div>
+                <div class="icons"><i class="fa-brands fa-square-instagram"></i><i
+                        class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-twitter"></i><i
+                        class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-menus">
+                <div class="foot-headings">Quick Links</div>
+                <div class="quick"><a href="index.html">Home</a></div>
+                <div class="quick"><a href="aboutus.html" target="_blank">About Us</a></div>
+                <div class="quick"><a href="contact.html" target="_blank">Contact Us</a></div>
+                <div class="quick"><a href="cyber.html" target="_blank">Cyber threats</a></div>
+                <!-- <div class="quick">Safety Tips</div> -->
+                <div class="quick"><a href="cases .html" target="_blank">Cases</a></div>
+            </div>
+            <div class="footer-menus">
+                <div class="foot-headings">Contact Us</div>
+                <div class="quick"><i class="fa-solid fa-envelope"></i> cybersecure@website.com</div>
+                <div class="quick"><i class="fa-solid fa-location-dot"></i> 833 Cantt Sialkot, ENG</div>
+                <div class="quick"><i class="fa-solid fa-phone"></i> +01 23456789010</div>
+            </div>
+            <div class="footer-menus">
+                <div class="foot-headings">Newsletter</div>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your email" class="subscribe-input" />
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="last">© 2025 CyberSecure. All rights reserved.</div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            offset: 120
+        });
+    </script>
+</body>
+
+</html>
