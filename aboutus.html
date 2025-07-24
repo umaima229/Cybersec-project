@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | AquaSec</title>
+  <link rel="stylesheet" href="aboutus.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<!-- ________________________________________________________________________NAVBAR_______________________________________________________________________ -->
+ <nav class="nav-bar">
+  <div class="navbar">
+    <!-- <div class="logo">CyberSecure</div> -->
+
+    <!-- Toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menus" id="menuLinks">
+      <ul>
+        <li><a href="index.html" target="_blank">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="cyber.html" target="_blank">CYBER THREATS</a></li>
+        <li><a href="cases.html" target="_blank">CASES</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+        <!-- <li><a href="aboutus.html">ABOUT US</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Buttons -->
+    <div class="nav-btns" id="menuButtons">
+      <!-- <button>SIGN UP</button> -->
+    </div>
+  </div>
+</nav>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const menuLinks = document.getElementById('menuLinks');
+  const menuButtons = document.getElementById('menuButtons');
+
+  toggleBtn.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+    menuButtons.classList.toggle('active');
+  });
+</script>
+
+ <!-- ________________________________________________________________________HERO SECTION_______________________________________________________________________ -->
+  <header class="hero">
+    <div class="about">
+      <h1 class="welcome">Welcome to <span>AquaSec <h1> Your Trusted Cyber Shield.</h1></span></h1>
+      <p class="cyber"> You to Stay Cyber Safe</p>
+    </div>
+  </header>
+
+  <main class="cards">
+    <section class="card pic">
+      <img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" class="icon lock" alt="Who we are" />
+      <div>
+        <h2 class="para">Who We Are</h2>
+        <p>We’re ethical hackers, security experts, and educators creating a secure digital future. With knowledge and tools, we protect users from online threats.</p>
+      </div>
+    </section>
+
+    <section class="card pic1">
+      <img src="https://cdn-icons-png.flaticon.com/512/3306/3306789.png" class="icon what" alt="What we do" />
+      <div>
+        <h2 class="para">What We Do</h2>
+        <ul>
+          <li>Security Awareness & Consultancy</li>
+          <li>Penetration Testing</li>
+          <li>Training & Ethical Hacking Tools</li>
+          <li>24/7 Monitoring & Threat Detection</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card pic2">
+      <img src="https://cdn-icons-png.flaticon.com/512/3011/3011270.png" class="icon khayal" alt="Vision" />
+      <div>
+        <h2 class="para">Our Vision</h2>
+        <p>We dream of a world where security knowledge is widespread, and no one feels unsafe online. Digital safety is not a choice — it's a right.</p>
+      </div>
+    </section>
+
+    <section class="contact page">
+      <h2 class="para">Contact Us</h2>
+      <p>Email: <a href="contact@cybersec.com">contact@cybersec</a></p>
+      <p>Follow us on <a href="https://www.linkedin.com/in/umaima-malik-a2b957333/" target="_blank">LinkedIn</a> | <a href="https://github.com/umaima229" target="_blank">GitHub</a> </p>
+    </section>
+  </main>
+
+ 
+</body>
+</html>

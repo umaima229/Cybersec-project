@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Cases</title>
+    <link rel="stylesheet" href="casestudy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- ___________________________________________________________________NAVBAR_______________________________________________________________ -->
+<nav class="nav-bar">
+  <div class="navbar">
+    <div class="logo">CyberSecure</div>
+
+    <!-- Toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menus" id="menuLinks">
+      <ul>
+        <li><a href="index.html" target="_blank">HOME</a></li>
+        <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+        <li><a href="cyber.html" target="_blank">CYBER THREATS</a></li>
+        <!-- <li>SAFETY TIPS</li> -->
+        <li><a href="cases.html" target="_blank">CASES</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    <!-- Buttons -->
+    <div class="nav-btns" id="menuButtons">
+      <button><a href="signup.html">SIGN UP</a></button>
+      <!-- <button>LOG IN</button> -->
+    </div>
+  </div>
+</nav>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const menuLinks = document.getElementById('menuLinks');
+  const menuButtons = document.getElementById('menuButtons');
+
+  toggleBtn.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+    menuButtons.classList.toggle('active');
+  });
+</script>
+
+
+    <!-- ___________________________________________________________________HERO SECTION_______________________________________________________________ -->
+    <div class="hero-case">
+        <img src="images/Vector.webp" alt="">
+        <div class="cases-section">
+            <h1>CYBER CASES</h1>
+            <section id="wannacry-case" class="mb-0 pb-0">
+                <div class="text-cases">
+                    <h2>WannaCry Ransomware Outbreak</h2>
+                    <p><strong>Date:</strong> May 2017</p>
+                    <p>
+                        In 2017, a mysterious virus began locking computers in <strong>hospitals, banks, and
+                            universities</strong> across the globe.
+                        Files were held hostage, and users were shown a message demanding a ransom in
+                        <strong>Bitcoin</strong> to unlock their data.
+                    </p>
+                    <p>
+                        The ransomware, known as <strong>WannaCry</strong>, spread rapidly by exploiting a vulnerability
+                        in
+                        Microsoft Windows.
+                        It infected more than <strong>300,000 systems in over 150 countries</strong> within just a few
+                        days.
+                        The attack hit the UK’s National Health Service (NHS) especially hard, disrupting surgeries and
+                        patient care.
+                    </p>
+                    <p>
+                        Victims had only a short time to pay the ransom before their files were permanently deleted.
+                        While some paid, many systems remained locked, causing massive operational and financial damage.
+                    </p>
+                    <p><strong>Impact:</strong> Estimated global damages exceeded $4 billion.</p>
+                    <p><strong>Lesson:</strong> Keep operating systems updated, disable unnecessary ports, and regularly
+                        back up important data.</p>
+                </div>
+                <hr>
+            </section>
+            <section id="twitter-hack" class="mb-0 pb-0">
+                <div class="text-cases">
+                    <h2>The Twitter Hack That Shocked the World</h2>
+                    <p><strong>Date:</strong> July 2020</p>
+                    <p>
+                        In 2020, the official Twitter accounts of Elon Musk, Barack Obama, Apple, and several other
+                        high-profile figures posted strange Bitcoin messages.
+                        It turned out to be a massive coordinated attack that compromised Twitter’s internal tools.
+                    </p>
+                    <p>
+                        Hackers used social engineering to trick Twitter employees into handing over credentials to
+                        internal
+                        systems.
+                        Once inside, they gained access to prominent accounts and tweeted a message promising to double
+                        any
+                        Bitcoin sent to a specific address.
+                        Within minutes, thousands of people had sent Bitcoin, falling for the scam.
+                    </p>
+                    <p>
+                        Twitter had to temporarily lock many verified accounts and shut down internal tools to prevent
+                        further damage.
+                        The breach raised serious questions about the security of even the biggest tech platforms.
+                    </p>
+                    <p><strong>Impact:</strong> Over $120,000 in Bitcoin was stolen. The hack exposed the risk of
+                        insider
+                        threats and weak employee training.</p>
+                    <p><strong>Lesson:</strong> Even the most secure platforms can be vulnerable to social engineering.
+                        Regular employee security training and restricted access controls are critical.</p>
+                </div>
+                <hr>
+            </section>
+
+
+        </div>
+    </div>
+    <!-- ___________________________________________________________________FOOTER_______________________________________________________________ -->
+    <section class="footer">
+        <div class="footer-sec">
+            <div class="footer-menus">
+                <div class="logo-f">CyberSecure</div>
+                <div>Follow our different social media <br> pages and stay tuned with the <br> latest information,
+                    <br>related to
+                    cyber security.
+                </div>
+                <div class="icons"><i class="fa-brands fa-square-instagram"></i><i
+                        class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-square-twitter"></i><i
+                        class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-menus">
+                <div class="foot-headings">Quick Links</div>
+                <div class="quick"><a href="index.html" target="_blank">Home</a></div>
+                <div class="quick"><a href="aboutus.html" target="_blank">About Us</a></div>
+                <div class="quick"><a href="contact.html" target="_blank">Contact Us</a></div>
+                <div class="quick"><a href="cyber.html" target="_blank">Cyber threats</a></div>
+                <!-- <div class="quick">Safety Tips</div> -->
+                <div class="quick"><a href="cases .html" target="_blank">Cases</a></div>
+            </div>
+            <div class="footer-menus">
+                <div class="foot-headings">Contact Us</div>
+                <div class="quick"><i class="fa-solid fa-envelope"></i> cybersecure@website.com</div>
+                <div class="quick"><i class="fa-solid fa-location-dot"></i> 833 Cantt Sialkot, ENG</div>
+                <div class="quick"><i class="fa-solid fa-phone"></i> +01 23456789010</div>
+            </div>
+            <div class="footer-menus">
+                <div class="foot-headings">Newsletter</div>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your email" class="subscribe-input" />
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="last">© 2025 CyberSecure. All rights reserved.</div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            offset: 120
+        });
+    </script>
+</body>
+
+</html>

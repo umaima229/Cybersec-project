@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us CyberSec</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+   <nav class="nav-bar">
+  <div class="navbar">
+
+    <!-- Toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menus" id="menuLinks">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+        <li><a href="cyber.html" target="_blank">CYBER THREATS</a></li>
+        <li><a href="cases .html" target="_blank">CASES</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+        <!-- <li><a href="ca.html" target="_blank">ADMIN</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Buttons -->
+    <!-- <div class="nav-btns" id="menuButtons">
+      <button>SIGN UP</button>
+      <button>LOG IN</button>
+    </div> -->
+  </div>
+</nav>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const menuLinks = document.getElementById('menuLinks');
+  const menuButtons = document.getElementById('menuButtons');
+
+  toggleBtn.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+    menuButtons.classList.toggle('active');
+  });
+</script>
+
+  <header class="contact">
+    <h1>Contact CyberSec</h1>
+    <p>Reach out — we’re here to secure your digital world </p>
+  </header>
+
+  <section class="cont-1">
+
+    <div class="form">
+      <h2>Send a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="info">
+      <h2>Connect with Us</h2>
+      <p><strong>Email:</strong> support@cybersec.com</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Location:</strong> Karachi, Pakistan</p>
+
+      <div class="lines">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+    </div>
+
+  </section>
+
+  
+
+</body>
+</html>
