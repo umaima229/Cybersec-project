@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSec Admin Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css".css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>CyberSec</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="crime.html"  target="_blank">Cases</a></li>
+      <li><a href="reports.html" target="_blank">Reports</a></li>
+      <li><a href="users.html" target="_blank">Users</a></li>
+      <li><a href="settings.html">Setting</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <header>
+      <h1>Welcome, Admin</h1>
+      <p>Cyber Security Command Center</p>
+    </header>
+    <section class="cards">
+      <div class="card">
+        <h3>Active Threats</h3>
+        <p>42</p>
+      </div>
+      <div class="card">
+        <h3>Resolved Cases</h3>
+        <p>187</p>
+      </div>
+      <div class="card">
+        <h3>Pending Reports</h3>
+        <p>13</p>
+      </div>
+      <div class="card">
+        <h3>Alerts Today</h3>
+        <p>5</p>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="chart-box">
+        <h2>Threat Detection Over Time</h2>
+        <img src="./66ab53c982cbfddc1d9f1c6e_15 - 31.07-min.jpg" alt="Threat Chart" />
+      </div>
+      <div class="logs-box">
+        <h2>Recent Activity Logs</h2>
+        <ul>
+          <li>[10:03] Firewall detected intrusion attempt.</li>
+          <li>[09:47] User login failed - 3 attempts.</li>
+          <li>[08:29] Malware scan completed.</li>
+          <li>[08:15] New threat signature updated.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="quick-actions">
+      <h2>Quick Actions</h2>
+      <div class="actions">
+        <button>Run Full Scan</button>
+        <button>Generate Report</button>
+        <button>View System Logs</button>
+        <button>Update Threat Database</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

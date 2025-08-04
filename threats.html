@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CyberSec Threats </title>
+  <link rel="stylesheet" href="threats.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+
+
+  <nav class="nav-bar">
+  <div class="navbar">
+    <div class="logo">CyberSecure</div>
+
+    <!-- Toggle button -->
+    <div class="toggle-btn" id="toggleBtn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu links -->
+    <div class="menus" id="menuLinks">
+      <ul>
+        <li><a href="index.html" target="_blank">HOME</a></li>
+        <li><a href="aboutus.html" target="_blank">ABOUT US</a></li>
+        <li><a href="threats.html">CYBER THREATS</a></li>
+        <li><a href="cases.html" target="_blank">CASES</a></li>
+        <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+        <!-- <li><a href="ca.html" target="_blank">ADMIN</a></li> -->
+      </ul>
+    </div>
+
+    <!-- Buttons -->
+    <div class="nav-btns" id="menuButtons">
+      <button>SIGN UP</button>
+      <!-- <button>LOG IN</button> -->
+    </div>
+  </div>
+</nav>
+<script>
+  const toggleBtn = document.getElementById('toggleBtn');
+  const menuLinks = document.getElementById('menuLinks');
+  const menuButtons = document.getElementById('menuButtons');
+
+  toggleBtn.addEventListener('click', () => {
+    menuLinks.classList.toggle('active');
+    menuButtons.classList.toggle('active');
+  });
+</script>
+
+  <section class="hero">
+    <div class="cntnt">
+      <h1 class="text">CyberSec Threats</h1>
+      <p class="world">Unmasking the Hidden Dangers of the Digital World</p>
+    </div>
+  </section>
+  <section class="threats">
+
+    <div class="card thr p">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920320.png" alt="Phishing" />
+      <h2>Phishing</h2>
+      <p>Fake emails or websites designed to trick users into giving up personal info. Always double-check links before clicking!</p>
+    </div>
+  
+    <div class="card thr m">
+      <img src="https://cdn-icons-png.flaticon.com/512/6124/6124934.png" alt="Malware" />
+      <h2>Malware</h2>
+      <p>Malicious software like viruses and spyware that can damage or steal your data. Keep your antivirus up to date.</p>
+    </div>
+  
+    <div class="card thr e">
+      <img src="https://cdn-icons-png.flaticon.com/512/10352/10352413.png" alt="Social Engineering" />
+      <h2>Social Engineering</h2>
+      <p>Tricking people into revealing confidential data using manipulation and trust. Stay alert, not just secure!</p>
+    </div>
+  
+    <div class="card thr d">
+      <img src="https://cdn-icons-png.flaticon.com/512/10278/10278758.png" alt="DDoS" />
+      <h2>DDoS Attacks</h2>
+      <p>Overloading websites/servers to make them crash. These attacks are disruptive but preventable with proper defenses.</p>
+    </div>
+  
+    <div class="card thr r">
+      <img src="https://cdn-icons-png.flaticon.com/512/10350/10350791.png" alt="Ransomware" />
+      <h2>Ransomware</h2>
+      <p>A dangerous malware that locks your data and demands payment. Backups and strong firewalls are key to prevention.</p>
+    </div>
+  
+    <div class="card thr z">
+      <img src="https://cdn-icons-png.flaticon.com/512/4467/4467411.png" alt="Zero-Day" />
+      <h2>Zero-Day Exploits</h2>
+      <p>Attacks on software flaws unknown to developers. Regular updates and security patches reduce this risk.</p>
+    </div>
+  
+  </section>
+
+
+</body>
+</html>

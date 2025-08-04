@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - Users</title>
+  <link rel="stylesheet" href="users.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Toggle Button -->
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h2>CyberSec</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="crime.html" target="_blank">Cases</a></li>
+      <li><a href="reports.html" target="_blank">Reports</a></li>
+      <li><a href="users.html" class="active" target="_blank">Users</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <h1>Users</h1>
+      <div class="users-grid">
+        <!-- 10 users here (as before) -->
+        <div class="user-card"><h2>Ali Raza</h2><p>Email: ali.raza@example.com</p><p>Role: User</p></div>
+        <div class="user-card"><h2>Fatima Khan</h2><p>Email: fatima.khan@example.com</p><p>Role: Moderator</p></div>
+        <div class="user-card"><h2>Usman Javed</h2><p>Email: usman.j@example.com</p><p>Role: Admin</p></div>
+        <div class="user-card"><h2>Zainab Ali</h2><p>Email: zainab.a@example.com</p><p>Role: User</p></div>
+        <div class="user-card"><h2>Bilal Hassan</h2><p>Email: bilal.h@example.com</p><p>Role: User</p></div>
+        <div class="user-card"><h2>Hina Shah</h2><p>Email: hina.shah@example.com</p><p>Role: Moderator</p></div>
+        <div class="user-card"><h2>Ahmed Nazir</h2><p>Email: ahmed.nazir@example.com</p><p>Role: Admin</p></div>
+        <div class="user-card"><h2>Maria Iqbal</h2><p>Email: maria.iqbal@example.com</p><p>Role: User</p></div>
+        <div class="user-card"><h2>Sara Naveed</h2><p>Email: sara.naveed@example.com</p><p>Role: Moderator</p></div>
+        <div class="user-card"><h2>Kamran Saeed</h2><p>Email: kamran.saeed@example.com</p><p>Role: User</p></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
